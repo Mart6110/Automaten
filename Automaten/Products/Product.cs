@@ -8,10 +8,12 @@ namespace Automaten.Products
 {
     abstract class Product
     {
+        // Properties
         private string name;
         private int price;
         private int id;
 
+        // Encapsulations
         public string Name 
         { 
             get { return name; }
@@ -27,6 +29,7 @@ namespace Automaten.Products
             get { return id; }
         }
 
+        // Constructor
         public Product(string name, int price, int id)
         {
             this.name = name;
@@ -34,6 +37,7 @@ namespace Automaten.Products
             this.id = id;
         }
 
+        // Creating abstract method
         protected internal abstract void GetProduct(); 
     }
 }
