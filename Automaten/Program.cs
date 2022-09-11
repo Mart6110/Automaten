@@ -1,4 +1,5 @@
 ﻿using System;
+using Automaten;
 
 namespace Automaten
 {
@@ -6,8 +7,9 @@ namespace Automaten
     {
         static void Main(string[] args)
         {
-            Gui gui = new Gui();
-            gui.Menu();
+            VendingMachine vendingMachine = new VendingMachine();
+
+            vendingMachine.Run();
         }
     }
 }
